@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { RiFacebookFill, RiLinkedinFill } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
@@ -22,15 +22,15 @@ function Footer() {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', 
+      behavior: "smooth",
     });
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [LastScroll]);
 
@@ -47,9 +47,12 @@ function Footer() {
       )}
 
       <div className="flex flex-col justify-center items-center bg-white w-full h-full">
-        <h1 className="text-2xl font-semibold mt-14 ">Subscribe to our newsletter</h1>
+        <h1 className="text-2xl font-semibold mt-14 ">
+          Subscribe to our newsletter
+        </h1>
         <p className="text-center mt-6 text-gray-400">
-          Lorem ipsum dolor sit amet consectetur <br />adipiscing elit phasellus amet dui
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipiscing elit phasellus amet dui
         </p>
         <div className="flex justify-between items-center space-x-4 m-16">
           <form action="post" className="flex items-center">
@@ -71,7 +74,9 @@ function Footer() {
           <FaYoutube />
         </div>
 
-        <p className="text-gray-800 mb-20">Copyright © 2024 Smalter | All Rights Reserved</p>
+        <p className="text-gray-800 mb-20">
+          Copyright © 2025 Smalter | All Rights Reserved
+        </p>
       </div>
     </div>
   );

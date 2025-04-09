@@ -1,11 +1,11 @@
-import React from 'react';
-import image from '../assets/image.jpg';
+import React from "react";
+import image from "../assets/image.jpg";
 
 import { TiArrowRight } from "react-icons/ti";
 
 function About() {
   return (
-    <div className='mt-32' id="about">
+    <div className="mt-32" id="about">
       <div className="relative mt-96">
         <img
           src={image}
@@ -13,8 +13,11 @@ function About() {
           className="absolute top-1/2 right-0 transform -translate-y-1/2"
         />
 
-        <div className="mt-72 ml-64">
-          <p className="text-blue-600 font-semibold text-xs"> __Descriptive text </p>
+        <div className="mt-54 ml-16">
+          <p className="text-blue-600 font-semibold text-xs">
+            {" "}
+            __Descriptive text{" "}
+          </p>
           <h1 className="font-bold mt-6 text-3xl">About us</h1>
           <p className="mt-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
@@ -31,8 +34,6 @@ function About() {
           </button>
         </div>
       </div>
-
-    
     </div>
   );
 }
