@@ -5,7 +5,7 @@ import Services from './pages/services.jsx';
 import Testimonial from './pages/testimonial.jsx';
 import Contact from './pages/contactus.jsx';
 import Blog from './pages/blog.jsx';
-import About from './pages/aboutus.jsx';
+import About from './pages/Aboutus.jsx';
 import Join from './pages/join.jsx';
 import Infos from './pages/infos';
 import Footer from './components/footer.jsx';
