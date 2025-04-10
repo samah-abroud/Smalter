@@ -1,5 +1,5 @@
 import React from 'react';
-import UiBlock from '../assets/UiBlock.png';
+import UiBlock from '../assets/UIBlock.png';
 import { Link } from 'react-router-dom';
 function Login() {
   return (
