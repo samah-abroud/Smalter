@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MdOutlineMenuOpen } from 'react-icons/md';
+import { Link } from 'react-router-dom';  
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -31,8 +32,6 @@ function Navbar() {
     { to: "#pricing", label: "Pricing" },
     { to: "#testimonial", label: "Testimonial" },
     { to: "#contact", label: "Contact us" },
-    { to: "#login", label: "Log in", isButton: true },
-
   ];
 
   return (
@@ -42,47 +41,50 @@ function Navbar() {
           Smalter
         </div>
 
-        {/* Desktop  */}
+        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 ml-96 text-gray-200">
           {navItems.map((item) => (
             <a
               key={item.to}
-              href={item.to}  
+              href={item.to}
               className="hover:text-white font-extralight"
               onClick={closeMenu}
             >
               {item.label}
             </a>
           ))}
+          <Link
+            to="/login"  
+            className="hover:text-white font-extralight"
+            onClick={closeMenu}
+          >
+            Log in
+          </Link>
         </div>
-
-        
-        
       </div>
 
-      {/* Mobile  */}
+      {/* Mobile Menu */}
       <div className="md:hidden w-6 cursor-pointer absolute top-4 right-4" onClick={toggleMenu}>
-        <MdOutlineMenuOpen  className='text-white text-3xl mr-0'/>
+        <MdOutlineMenuOpen className='text-white text-3xl mr-0' />
       </div>
 
-     
       <div className={`md:hidden ${mobileMenu ? "block" : "hidden"} bg-blue-600 text-white p-4 space-y-4`}>
         {navItems.map((item) => (
           <a
             key={item.to}
-            href={item.to} 
+            href={item.to}
             className="block text-center text-xl font-light hover:text-gray-200"
             onClick={closeMenu}
           >
             {item.label}
           </a>
         ))}
-        <a
-          href="#login" 
+        <Link
+          to="/login"  
           className="block text-center text-white hover:text-gray-200 font-light"
         >
-          Se Connecter
-        </a>
+         Log in 
+        </Link>
       </div>
     </nav>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import image from "../assets/image.jpg";
 
 import { TiArrowRight } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -28,10 +29,10 @@ function About() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Mollitia earum.
           </p>
-          <button className="bg-blue-600 text-white text-sm w-[130px] h-[40px] rounded-[40px] flex items-center justify-center mt-8">
-            S'inscrire
+          <Link to="/signIn"  className="bg-blue-600 text-white text-sm w-[130px] h-[40px] rounded-[40px] flex items-center justify-center mt-8">
+            Sign Up
             <TiArrowRight className="ml-2 w-6 h-6 text-white " />
-          </button>
+          </Link>
         </div>
       </div>
     </div>

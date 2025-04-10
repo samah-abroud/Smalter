@@ -10,8 +10,7 @@ import Join from './pages/join.jsx';
 import Infos from './pages/infos';
 import Footer from './components/footer.jsx';
 import Resultat from './pages/resultat.jsx';
-import Pricing from './pages/pricing.jsx'
-
+import Pricing from './pages/pricing.jsx';
 
 function App() {
   return (
@@ -23,11 +22,11 @@ function App() {
       <Join id="about" />
       <Blog id="blog" />
       <Services id="services" />
-      <Resultat/>
-      <Pricing/>
+      <Resultat />
+      <Pricing id="pricing"/>
       <Testimonial id="testimonial" />
       <Contact id="contact" />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
