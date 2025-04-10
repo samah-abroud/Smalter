@@ -40,7 +40,7 @@ const cardData = [
 
 const Blog = () => {
   return (
-    <div className="mt-20 " id="blog">
+    <div className="mt-20  " id="blog">
       <div className="flex flex-col justify-center pt-16 items-center  text-blue-600 font-semibold text-s text-center">
         <p>Blog</p>
         <span className="text-center">___</span>
@@ -51,7 +51,7 @@ const Blog = () => {
         Reiciendis, non reprehenderit adipisci repellat corrupti.
       </p>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center m-10">
         {cardData.map((card, index) => (
           <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
             <BlogCard

@@ -1,7 +1,7 @@
 import React from 'react';
 
-function connecter() {
+function login() {
   return <h1> Page</h1>;  
 }
 
-export default connecter;
+export default login;

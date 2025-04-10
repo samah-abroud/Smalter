@@ -30,8 +30,9 @@ function Navbar() {
     { to: "#services", label: "Services" },
     { to: "#pricing", label: "Pricing" },
     { to: "#testimonial", label: "Testimonial" },
-    { to: "#blog", label: "Blog" },
-    { to: "#contact", label: "Contact us", isButton: true },
+    { to: "#contact", label: "Contact us" },
+    { to: "#login", label: "Log in", isButton: true },
+
   ];
 
   return (
@@ -56,14 +57,7 @@ function Navbar() {
         </div>
 
         
-        <div className="hidden md:flex">
-          <a
-            href="#login" 
-            className="text-white hover:text-gray-200 transition-colors duration-300"
-          >
-            Se Connecter
-          </a>
-        </div>
+        
       </div>
 
       {/* Mobile  */}

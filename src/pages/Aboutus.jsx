@@ -5,7 +5,7 @@ import { TiArrowRight } from "react-icons/ti";
 
 function About() {
   return (
-    <div className="mt-32" id="about">
+    <div  id="about">
       <div className="relative mt-96">
         <img
           src={image}
@@ -13,7 +13,7 @@ function About() {
           className="absolute top-1/2 right-0 transform -translate-y-1/2"
         />
 
-        <div className="mt-54 ml-16">
+        <div className="mt-54 ml-40">
           <p className="text-blue-600 font-semibold text-xs">
             {" "}
             __Descriptive text{" "}
