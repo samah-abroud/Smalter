@@ -1,5 +1,5 @@
 import React from 'react';
-import UiBlock from '../assets/UiBlock.png';
+import UiBlock from '../assets/UIBlock.png';
 import { PiYoutubeLogoFill, PiSlackLogoBold } from "react-icons/pi";
 import { SiAmazon } from "react-icons/si";
 import { IoLogoGoogle } from "react-icons/io";
